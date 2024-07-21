@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+}
+nav{
+    background-color: black;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+}
+
+.left ul img {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    padding-right: 10px;
+    padding-top: 10px;
+    
+}
+.left ul{
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.left ul li{
+    list-style-type: none;
+    padding-right: 30px;
+}
+
+.left ul li a{
+    text-decoration: none;
+    color: orange;
+    cursor: pointer;
+
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    padding-right: 60px ;
+}
+
+.right button{
+    background-color: orange;
+    list-style-type: none;
+    padding: 10px 15px;
+    border : none;
+    border-radius: 10px;
+    width: 50px 50px;
+}
+
+.right button a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*-----stylenamecard-----*/
+.box{
+    border: 3px black solid; 
+    width:350px; 
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/*------styleform------*/
+
+form{
+    display: block;
+    background-color: white; 
+    width: 40%; 
+    margin: 10px auto;
+    padding: 40px; 
+}
+input, text, textarea, select {
+    box-sizing: border-box;
+    width: 100%;
+    cursor: pointer;
+}
+
+textarea{
+    resize: vertical;
+}
+form div{
+    margin-bottom: 10px;
+}
+
+form label{
+    font-weight: bold;
+}
+
+form button{
+    background-color: orange;
+    width: auto;
+    padding: 8px 10px;
+    border : none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+    transition: 0.5;
+}
+
+
+/*-----Blog-----*/
+
+#teknologi{
+    width: 20px;
+}
+
+#icon{
+width: 30px;
+height: 30px;
+
+}
+
+#buttonblog{
+    background-color: black;
+    width: 150px;
+    border : none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+
+}
