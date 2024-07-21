@@ -31,7 +31,7 @@ function renderBlog() {
         document.getElementById("content").innerHTML += `
         <div class="box">
             <div>
-            <img src="/asset/photo/WhatsApp Image 2024-07-15 at 21.01.44.jpeg"
+            <img src="./WhatsApp Image 2024-07-15 at 21.01.44.jpeg"
                 alt="profile img"
                 style="width: 100%; 
                     display: block; 
