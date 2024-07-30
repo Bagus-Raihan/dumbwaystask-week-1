@@ -1,0 +1,30 @@
+
+.layar {
+    display: flex;
+    flex-direction: row;
+
+}
+
+@media screen and (max-width: 700px) {
+    
+    .layar {
+        flex-direction: column;
+    }   
+    .box {
+        border: 3px black solid; 
+    width:30%; 
+    margin: 50px;
+    padding: 20px;
+    box-shadow: 20%;
+    }
+}
+
+
+.box{
+    border: 3px black solid !important;
+    width:100%; 
+    margin: 50px;
+    padding: 20px;
+    box-shadow: 20%;
+}
+

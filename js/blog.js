@@ -12,11 +12,11 @@ function addblog(event) {
 
     let blog = {
     tittle,
-    startdate,
-    enddate,
     description,
-    teknologi
+    postDate : new Date()
+        
     }
+    
 
     dataBlog.push(blog)
 
@@ -39,8 +39,7 @@ function renderBlog() {
                     ">
                 <div>
                 <h3 class style="margin: auto;">${dataBlog[i].tittle}</h3>
-                <p style="font-size: 12px; font-weight: 100; margin: auto;">Durasi 3 Bulan
-                </p>
+                <p style="font-size: 12px; font-weight: 100;">${getFullDate(dataBlog[i].postDate)}</p>
                 <p style="margin: auto;">${dataBlog[i].description}</p>
             </div>
             <div>
@@ -60,3 +59,24 @@ function renderBlog() {
         `;
     }
 }
+function getFullDate(time){
+let nameOfMonth = [
+    "Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"
+]
+let date = time.getDate();
+let month = nameOfMonth[time.getMonth()];
+let year = time.getFullYear();
+
+let hour = time.getHours();
+let minute = time.getMinutes();
+
+return `${date} ${month} ${year} - ${hour}:${minute} WIB`;
+
+}
+// const start = new Date();
+// console.log(start);
+// console.log("tanggal : ", start.getDate()); 
+// console.log("bulan : ", nameOfMonth[start.getMonth()]);
+// console.log("tahun : ", start.getFullYear());
+
+

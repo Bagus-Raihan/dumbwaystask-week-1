@@ -1,7 +1,5 @@
-body{
-    margin: 0;
-}
-nav{
+
+.navbar{
     background-color: black;
     padding: 0px;
     display: flex;
@@ -45,7 +43,7 @@ nav{
     padding-right: 60px ;
 }
 
-.right button{
+.contact{
     background-color: orange;
     list-style-type: none;
     padding: 10px 15px;
@@ -59,13 +57,52 @@ nav{
     color: black;
 }
 
+.bar {
+    display: none;
+}
 
-/*-----stylenamecard-----*/
-.box{
-    border: 3px black solid; 
-    width:350px; 
-    margin: 50px auto;
-    padding: 20px;
+.bar-hide{
+    display: none;
+}
+
+@media only screen and (max-width:700px) {
+    .contact {
+        display: none;
+    
+    }
+
+    .bar {
+        display: block;
+        width: 50px;
+        height: 50px;
+    }
+
+    .left ul li a {
+        display: none;
+    }
+    
+    .bar-hamburger {
+        background-color: gray;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }   
+
+    .bar-hide{
+        display: none;
+    }
+
+    .bar3 {
+        border: 2px solid black;
+        text-align: center;
+        font-weight: bold;
+        font-size: x-large;
+    }
+
+    .font-bar{
+        text-decoration: none;
+        color: white;
+    }
 }
 
 /*------styleform------*/
